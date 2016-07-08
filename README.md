@@ -2,7 +2,13 @@
 -------------------------
 Modules for extracting configuration data from AWS and displaying them
 
-install:
+% install to use the module
+
+npm install elephantdump
+
+
+
+install to use the command line tools:
 
 % sudo npm install -g .
 
