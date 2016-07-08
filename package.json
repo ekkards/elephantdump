@@ -1,6 +1,6 @@
 {
   "name": "elephantdump",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extracts configuration data from AWS EC2 as JSON and transforms them as CSV",
   "dependencies": {
     "aws-sdk": "^2.4.5",
@@ -11,13 +11,18 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"see test.js and commandline tools extractEc2 | transformEc2 \" && exit 1"
   },
   "bin": {
     "extractEc2": "./extractEc2.js",
     "transformEc2": "./transformEc2.js"
   },
-  "keywords": [],
+  "main": "index.js",
+  "keywords": ["AWS", "EC2", "elephantshop"],
   "author": "Ekkard Schnedermann, https://www.elephantshop.net, 2016",
-  "license": "MIT license"
+  "license": "MIT license",
+  "repository": {
+    "type": "git",
+    "url": "git://ekkards/elephantdump"
+  }
 }

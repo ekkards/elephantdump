@@ -1,5 +1,8 @@
 var _ = require('lodash');
 
+exports.transformCsv = transformCsv;
+exports.aggregateRegions = aggregateRegions;
+
 var cQuo = '"';
 var cSep = ';';         // , for US, ; for German
 var cCrLf = '\r\n';
