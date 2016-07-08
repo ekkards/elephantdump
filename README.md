@@ -4,16 +4,16 @@ Modules for extracting configuration data from AWS and displaying them
 
 Install as node module
 ----------------------
-
+```
 npm install elephantdump
-
+```
 
 
 Install as command line tools
 -----------------------------
-
+```
 % sudo npm install elephantshop -g
-
+```
 
 Prerequisites:
 ---------------
@@ -32,7 +32,8 @@ dump.describeEc2AllRegions()
         console.log(inregion, operation);
     })
     .on('complete', function (ec2data, errors) {
-        var csvall = dump.transformCsv( dump.aggregateRegions( ec2data ));        // JSON to CSV
+        // aggregates extracted JSON for all regions and transforms to a single CSV
+        var csvall = dump.transformCsv( dump.aggregateRegions( ec2data ));
     });
 ```
 
