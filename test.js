@@ -1,5 +1,4 @@
 var fs = require('fs');
-var aws = require('aws-sdk');
 var dump = require('elephantdump');
 
 var describe = dump.describeEc2AllRegions();        // alternatively describeEc2('eu-central-1')
