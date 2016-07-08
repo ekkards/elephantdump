@@ -2,7 +2,7 @@
 const os = require('os');
 const fs = require('fs');
 var program = require('commander');
-var transformCsv = require('./transformCsv.js');
+var transformCsv = require('./transformEc2Csv.js');
 
 program
     .version('0.0.1')
@@ -26,17 +26,14 @@ else {
         var chunk = process.stdin.read();
         if (chunk !== null) {
             data+= chunk;
-            console.error( "on(readable) with chunk", chunk );
         }
     });
 
     process.stdin.on('data', function(chunk) {
-        console.error( "on(data) with chunk", chunk );
         data+= chunk;
     });
 
     process.stdin.on('end', () => {
-        console.error( "on(end)" );
         run( data );
     });
 return;
