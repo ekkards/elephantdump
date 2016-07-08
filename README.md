@@ -1,6 +1,6 @@
 # elephantdump
-
-modules for extracting configuration data from AWS and displaying them
+-------------------------
+Modules for extracting configuration data from AWS and displaying them
 
 install:
 
@@ -10,11 +10,11 @@ install:
 
 usage:
 
-% extract > Ecdata.json
+% extractEc2 > Ecdata.json
 
-% transform < Ec2data.json > Ec2data.csv
+% transformEc2 < Ec2data.json > Ec2data.csv
 
-% extract | transform > Ec2data.csv
+% extractEc2 | transformEc2 > Ec2data.csv
 
 
 prerequisites:
