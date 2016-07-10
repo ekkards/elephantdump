@@ -365,6 +365,8 @@ function transformCsv(ec2) {
     csv += transformIpPermissions(ec2.accountID, ec2['SecurityGroups'], "IpPermissions", "forbidden");
     if (csv !== "") csv += '\r\n';
     csv += transformIpPermissions(ec2.accountID, ec2['SecurityGroups'], "IpPermissionsEgress", "forbidden");
+    csv += printArray("Reservations.Instances", expandMasterDetail(ec2['Reservations'], "ReservationId", "Instances"));
+    if (csv !== "") csv += '\r\n';
     return csv;
 }
 

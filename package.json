@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "Extracts configuration data from AWS EC2 as JSON and transforms them as CSV",
   "dependencies": {
-    "aws-sdk": "^2.4.5",
+    "aws-sdk": "^2.4.6",
     "commander": "^2.9.0",
     "events": "^1.1.1",
     "lodash": "^4.13.1",
@@ -24,7 +24,7 @@
     "elephantshop"
   ],
   "author": "Ekkard Schnedermann, https://www.elephantshop.net, 2016",
-  "license": "MIT license",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ekkards/elephantdump"

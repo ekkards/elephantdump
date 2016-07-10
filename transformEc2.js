@@ -5,7 +5,7 @@ var program = require('commander');
 var transformCsv = require('./transformEc2Csv.js');
 
 program
-    .version('0.0.1')
+    .version('0.0.5')
     .option('-o, --infile <path>', 'output filename (defaults to stdin)')
     .option('-o, --outfile <path>', 'output filename (defaults to stdout)')
     .option('-v, --verbose', 'verbose (defaults to non-verbose)')

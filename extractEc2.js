@@ -5,7 +5,7 @@ var program = require('commander');
 var describeEc2 = require('./describeEc2.js');
 
 program
-    .version('0.0.1')
+    .version('0.0.5')
     .option('-o, --outfile <path>', 'output filename (defaults to stdout)')
     .option('-e, --errfile <path>', 'error filename (defaults to stderr)')
     .option('-r, --region <string>', 'region to list (defaults to all)')

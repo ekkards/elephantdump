@@ -1,7 +1,7 @@
 var fs = require('fs');
-var dump = require('elephantdump');
+var dump = require('elephantdump');         // for testing use './index.js'
 
-var describe = dump.describeEc2AllRegions();        // alternatively describeEc2('eu-central-1')
+var describe = dump.describeEc2AllRegions();        // or: describeEc2('eu-central-1')
 
 if (!describe || describe == null) {
     console.err("failure in describe, aborting program, please set up AWS defaults");
