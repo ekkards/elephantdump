@@ -1,6 +1,6 @@
 {
   "name": "elephantdump",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Extracts configuration data from AWS EC2 as JSON and transforms them as CSV",
   "dependencies": {
     "aws-sdk": "^2.4.6",
