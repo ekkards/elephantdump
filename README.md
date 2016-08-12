@@ -15,6 +15,14 @@ Install as command line tools
 % sudo npm install elephantshop -g
 ```
 
+
+Update during development from current directory
+------------------------------------------------
+```
+% sudo npm install -g .
+```
+
+
 Prerequisites:
 ---------------
 
